@@ -1,0 +1,35 @@
+.head {
+    color: blueviolet;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    text-align: center;
+    border: 2px red solid;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.hp {
+    text-align: justify;
+    background-color: rgba(255, 127, 80, 0.397);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hh {
+    color: rgb(43, 52, 226);
+    font-size: 30px;
+    text-align: center;
+    border: 2px rgb(0, 255, 17) solid;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.ful>li {
+    color: sienna;
+    font-size: 20px;
+}
+
+.liitem {
+    color: deeppink;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
