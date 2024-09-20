@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get money.Home</title>
+    <link rel="shortcut icon" href="img/get mony fav .png" type="image/x-icon">
+
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!--  Tail wind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="flex justify-between items-center bg-slate-900 px-2 py-5">
+
+            <div class="flex items-center gap-3 text-red-100">
+                <img class="w-14" src="img/pp.png " alt="">
+                <div>
+                    <h3 class="font-bold">Kamrul Islam</h3>
+                    <p class="text-[10px]">01865****44</p>
+                </div>
+            </div>
+
+            <div class="text-yellow-500">|</div>
+
+            <div class="flex ">
+                <img class="w-10" src="img/get mony fav .png" alt="">
+
+                <div class="text-white ml-3">
+                    <h1 class="text-lg text-green-600 font-extrabold"> ৳ <span class="text-blue-600"
+                            id="curbal">100.00</span></h1>
+                    <p class="text-[10px]">Available Ballance</p>
+                </div>
+            </div>
+
+            <div class="text-yellow-500">|</div>
+
+            <a class="" href="index.html">
+                <button class=" flex h-7 items-center bg-white px-2 rounded-xl  text-base">
+                    <img src="img/logout.svg" alt="">
+                    Log out
+                </button>
+
+            </a>
+
+        </div>
+    </nav>
+
+    <main class="">
+        <div class="mx-6 my-7">
+
+            <div class="flex items-center gap-2 justify-center">
+                <h1 class="text-2xl font-bold">🔥 Welcome to
+                </h1>
+                <img class="w-28" src="img/gtm.png" alt="">
+            </div>
+
+
+            <p class="font-semibold text-center text-gray-400">
+                Enjoy easy and convenient financial services with us. <br>Cashout charge is low (only 11tk per 1000) & Payment is safe.
+            </p>
+        </div>
+
+        <div id="btvar" class="bg-red-100 px-8 mx-2 mt-6 py-6 rounded-2xl  text-red-500 font-semibold ">
+
+            <!--               div 1                    -->
+            <div class=" grid grid-cols-3 gap-3">
+
+                <button id="addmo"
+                    class="border items-center text-center border-gray-500 rounded-2xl flex-col justify-center px-1 py-4 bg-sky-100 ">
+                    <img class="mx-[auto]" src="img/ico/addm.png" alt="">
+                    <h2>Add Money</h2>
+                </button>
+
+                <button id="outmo"
+                    class="border items-center text-center border-gray-500 rounded-2xl flex-col justify-center px-5 py-4 bg-sky-100 ">
+                    <img class="mx-[auto] w-12" src="img/ico/chout.png" alt="">
+                    <h2>Cashout</h2>
+                </button>
+
+                <button id="sendmo"
+                    class="border items-center text-center border-gray-500 rounded-2xl flex-col justify-center px-1 py-4 bg-sky-100">
+                    <img class="mx-[auto]" src="img/ico/trans.png" alt="">
+                    <h2>Send Money</h2>
+                </button>
+
+            </div>
+
+            <!--                  div 2                -->
+            <div class="mt-5 grid grid-cols-3 gap-3">
+
+                <button id="billBtn"
+                    class="border items-center text-center border-gray-500 rounded-2xl flex-col justify-center px-5 py-4 bg-sky-100">
+                    <img class="mx-[auto]" src="img/ico/pay.png" alt="">
+                    <h2>Pay bill</h2>
+                </button>
+
+                <button id="BonusBtn"
+                    class="border items-center text-center border-gray-500 rounded-2xl flex-col justify-center px-5 py-4 bg-sky-100">
+                    <img class="mx-[auto] w-12" src="img/ico/cb.png" alt="">
+                    <h2>Get bonus</h2>
+                </button>
+
+                <button id="trans"
+                    class="border items-center text-center border-gray-500 rounded-2xl flex-col justify-center px-2 py-4 bg-sky-100">
+                    <img class="mx-[auto]" src="img/ico/tran.png" alt="">
+                    <h2>Transactions</h2>
+                </button>
+
+            </div>
+        </div>
+
+        <!--      last payment;      -->
+        <div id="payhis" class="mx-6 mt-8">
+            <h3 class="text-2xl font-bold">Recent Payments:</h3>
+
+            <div class=" flex  mt-4 px-2 py-2 bg-gray-100 rounded-2xl">
+                <div class="flex-none">
+                    <button class="btn btn-circle btn-ghost">
+                        <img class="w-12 border border-gray-400 p-2 rounded-[50%]" src="img/ico/paid.png" alt="">
+                    </button>
+                </div>
+                <div class="flex-1 ml-2">
+                    <a class="font-semibold text-stone-400 text-xl">Electricity Bill</a>
+                    <p class="text-xs">Today 01:44 AM</p>
+                </div>
+                <div class="flex-none">
+                    <button class="btn btn-circle btn-ghost">
+                        <img class="w-4" src="img/ico/vm.png" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <div class=" flex  mt-4 px-2 py-2 bg-gray-100 rounded-2xl">
+                <div class="flex-none">
+                    <button class="btn btn-circle btn-ghost">
+                        <img class="w-12 border border-gray-400 p-2 rounded-[50%]" src="img/ico/paid.png" alt="">
+                    </button>
+                </div>
+                <div class="flex-1 ml-2">
+                    <a class="font-semibold text-xl">Bank Deposit</a>
+                    <p class="text-sm">Today 01:44 AM</p>
+                </div>
+                <div class="flex-none">
+                    <button class="btn btn-circle btn-ghost">
+                        <img class="w-4" src="img/ico/vm.png" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <div class=" flex  mt-4 px-2 py-2 bg-gray-100 rounded-2xl">
+                <div class="flex-none">
+                    <button class="btn btn-circle btn-ghost">
+                        <img class="w-12 border border-gray-400 p-2 rounded-[50%]" src="img/ico/paid.png" alt="">
+                    </button>
+                </div>
+                <div class="flex-1 ml-2">
+                    <a class="font-semibold text-xl">Mobile Recharge</a>
+                    <p class="text-sm">Today 01:44 AM</p>
+                </div>
+                <div class="flex-none">
+                    <button class="btn btn-circle btn-ghost">
+                        <img class="w-4" src="img/ico/vm.png" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <div class=" flex  mt-4 px-2 py-2 bg-gray-100 rounded-2xl">
+                <div class="flex-none">
+                    <button class="btn btn-circle btn-ghost">
+                        <img class="w-12 border border-gray-400 p-2 rounded-[50%]" src="img/ico/paid.png" alt="">
+                    </button>
+                </div>
+                <div class="flex-1 ml-2">
+                    <a class="font-semibold text-xl">Gas Bill</a>
+                    <p class="text-sm">Today 01:44 AM</p>
+                </div>
+                <div class="flex-none">
+                    <button class="btn btn-circle btn-ghost">
+                        <img class="w-4" src="img/ico/vm.png" alt="">
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- ***************************** add mony ********************************* -->
+        <div id="addform" style="display: none;"
+            class="card border border-red-100 bg-base-100 mx-auto my-10 w-[90%] shadow-xl  text-center py-4">
+            <h1 class="text-2xl font-bold">
+                <span class="text-blue-600">Add </span>
+                <span class="text-red-500">M<span class="text-green-600">on</span>ey</span>.
+            </h1>
+            <form class="p-5">
+
+                <!-- Method -->
+                <div class="form-control mt-4">
+                    <select class="text-gray-400 border border-gray-300 px-4 py-3 rounded-3xl" name="Bnak"
+                        aria-placeholder="Select Method." id="" required>
+                        <option value="">Select a Method</option>
+                        <option value="">Visa</option>
+                        <option value="">Abc bank.</option>
+                        <option value="">xyz bank ltd.</option>
+                        <option value="">Gramin Bank ltd.</option>
+                        <option value="">Uttara bank ltd.</option>
+                    </select>
+                </div>
+
+                <!-- amount no.-->
+                <div class="form-control mt-4">
+                    <input type="text" placeholder="Bank Acount No." class="input rounded-3xl input-bordered"
+                        required />
+                </div>
+
+
+                <!-- amount-->
+                <div class="form-control mt-4">
+                    <input id="inputAmm" type="text" placeholder="Amount" class="input rounded-3xl input-bordered"
+                        required />
+                </div>
+
+                <!-- pin code -->
+                <div class="mt-4 form-control">
+                    <input id="pin" type="password" placeholder="Enter Your Pin"
+                        class="input rounded-3xl input-bordered" required autocomplete="off" />
+                </div>
+
+                <!-- button -->
+                <div class="form-control mt-4">
+                    <button id="addbtn" class=" rounded-3xl h-10 bg-green-500 text-white" id="btn">Add money</button>
+                </div>
+
+            </form>
+        </div>
+
+        <!-- ************************ cahs out *********************************** -->
+        <div id="outform" style="display: none;"
+            class="card border border-red-100 bg-base-100 mx-auto my-10 w-[90%] shadow-xl  text-center py-4">
+
+            <h1 class="text-2xl font-bold">
+                <span class="text-blue-600">Cash </span>
+                <span class="text-red-500">O<span class="text-green-600">u</span>t</span>.
+            </h1>
+
+            <form class="p-5">
+
+                <!-- Phone number -->
+                <div class="form-control">
+                    <input type="text" placeholder="Enter Agent Number" class="input rounded-3xl input-bordered"
+                        required />
+                </div>
+
+                <!-- Amount -->
+                <div class="form-control mt-4">
+                    <input id="outMoneyInput" type="text" placeholder="Amount" class="input rounded-3xl input-bordered"
+                        required />
+                </div>
+
+                <!-- pin code -->
+                <div class="mt-4 form-control">
+                    <input id="pin1" type="password" placeholder="Enter Your Pin"
+                        class="input rounded-3xl input-bordered" required autocomplete="off" />
+                </div>
+
+                <!-- button -->
+                <div class="form-control mt-4">
+                    <button id="outbtn" class=" rounded-3xl h-10 bg-blue-800 text-white" id="btn">Cash Out</button>
+                </div>
+
+            </form>
+        </div>
+
+        <!-- ************************ send money *********************************** -->
+        <div id="sendform" style="display: none;"
+            class="card border border-red-100 bg-base-100 mx-auto my-10 w-[90%] shadow-xl  text-center py-4">
+
+            <h1 class="text-2xl font-bold">
+                <span class="text-blue-600">Send </span>
+                <span class="text-red-500">Mo<span class="text-green-600">ne</span>y</span>.
+            </h1>
+
+            <form class="p-5">
+
+                <!-- Phone number -->
+                <div class="form-control">
+                    <input type="text" placeholder="Enter Receivers Number" class="input rounded-3xl input-bordered"
+                        required />
+                </div>
+
+                <!-- Amount -->
+                <div class="form-control mt-4">
+                    <input id="sendMoneyInput" type="text" placeholder="Amount" class="input rounded-3xl input-bordered"
+                        required />
+                </div>
+
+                <!-- pin code -->
+                <div class="mt-4 form-control">
+                    <input id="pin2" type="password" placeholder="Enter Your Pin"
+                        class="input rounded-3xl input-bordered" required autocomplete="off" />
+                </div>
+
+                <!-- button -->
+                <div class="form-control mt-4">
+                    <button id="sendbtn" class=" rounded-3xl h-10 bg-rose-500 text-white" id="btn"> Send Money</button>
+                </div>
+
+            </form>
+        </div>
+
+
+        <!-- ***************************** Pay Bill ********************************* -->
+        <div id="billform" style="display: none;"
+            class="card border border-red-100 bg-base-100 mx-auto my-10 w-[90%] shadow-xl  text-center py-4">
+            <h1 class="text-2xl font-bold">
+                <span class="text-blue-600">Pay </span>
+                <span class="text-red-500">b<span class="text-green-600">il</span>l</span>.
+            </h1>
+            <form class="p-5">
+
+                <!-- Method -->
+                <div class="form-control mt-4">
+                    <select class="text-gray-400 border border-gray-300 px-4 py-3 rounded-3xl" name="Payment"
+                        aria-placeholder="Select Method." required>
+                        <option value="">Select To pay</option>
+                        <option value="">Gas</option>
+                        <option value="">Dish</option>
+                        <option value="">Electricity</option>
+                        <option value="">Education.</option>
+                        <option value="">Water</option>
+                    </select>
+                </div>
+
+                <!-- Biller Id.-->
+                <div class="form-control mt-4">
+                    <input type="text" placeholder="Biller Id" class="input rounded-3xl input-bordered" required />
+                </div>
+
+
+                <!-- amount-->
+                <div class="form-control mt-4">
+                    <input id="PayInput" type="text" placeholder="Amount" class="input rounded-3xl input-bordered"
+                        required />
+                </div>
+
+                <!-- pin code -->
+                <div class="mt-4 form-control">
+                    <input id="pin3" type="password" placeholder="Enter Your Pin"
+                        class="input rounded-3xl input-bordered" required autocomplete="off" />
+                </div>
+
+                <!-- button -->
+                <div class="form-control mt-4">
+                    <button id="payBtn" class=" rounded-3xl h-10 bg-teal-500 text-white" id="btn">Pay Bill</button>
+                </div>
+
+            </form>
+        </div>
+
+
+        <!-- ***************************** Get Bonus ********************************* -->
+        <div id="Bonusform" style="display: none;"
+            class="card border border-red-100 bg-base-100 mx-auto my-10 w-[90%] shadow-xl  text-center py-4">
+            <h1 class="text-2xl font-bold">
+                <span class="text-blue-600">Get </span>
+                <span class="text-red-500">Bo<span class="text-green-600">nu</span>s</span>.
+            </h1>
+            <form class="p-5">
+
+                <p>Get (TK. 100) bonus from the coupons.</p>
+
+                <!-- Coupon-->
+                <div class="form-control mt-4">
+                    <input id="CouponInput" type="text" placeholder="Enter your coupon Digits"
+                        class="input rounded-3xl input-bordered" required />
+                </div>
+
+                <!-- pin code -->
+                <div class="mt-4 form-control">
+                    <input id="pin5" type="password" placeholder="Enter Your Pin"
+                        class="input rounded-3xl input-bordered" required autocomplete="off" />
+                </div>
+
+                <!-- button -->
+                <div class="form-control mt-4">
+                    <button id="BonusAddBtn" class=" rounded-3xl h-10 bg-teal-500 text-white" id="btn">Get
+                        Bonus</button>
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+
+
+    <script src="Js/Toggle.js"></script>
+    <script src="Js/utili.js"></script>
+    <script src="Js/home.js"></script>
+</body>
+
+</html>
