@@ -33,6 +33,30 @@ document.getElementById('addbtn').addEventListener('click', function (event) {
     else {
         alert('Failed to add money. Pid did not matched.')
     }
+
+    const div = document.createElement('div');
+    div.innerHTML = `
+                <div class=" flex  mt-4 px-2 py-2 bg-gray-100 rounded-2xl">
+                <div class="flex-none">
+                    <button class="btn btn-circle btn-ghost">
+                        <img class="w-12 border border-gray-400 p-2 rounded-[50%]" src="img/ico/paid.png" alt="">
+                    </button>
+                </div>
+
+                <div class="flex-1 ml-2">
+                    <a class="font-semibold text-stone-400 text-xl">${addMonyInput} ${'৳ Added'}</a>
+                    <p class="text-xs">Today 01:44 AM</p>
+                </div>
+                
+                <div class="flex-none">
+                    <button class="btn btn-circle btn-ghost">
+                        <img class="w-4" src="img/ico/vm.png" alt="">
+                    </button>
+                </div>
+            </div>
+    `;
+
+    document.getElementById('payhis').appendChild(div)
 })
 
 //--------------------------- cash out money from account:-------------------------
@@ -71,6 +95,32 @@ document.getElementById('outbtn').addEventListener('click', function (event) {
     else {
         alert('Failed to add money. Pid did not matched.')
     }
+
+
+    const div = document.createElement('div');
+    div.innerHTML = `
+                <div class=" flex  mt-4 px-2 py-2 bg-gray-100 rounded-2xl">
+                <div class="flex-none">
+                    <button class="btn btn-circle btn-ghost">
+                        <img class="w-12 border border-gray-400 p-2 rounded-[50%]" src="img/ico/paid.png" alt="">
+                    </button>
+                </div>
+
+                <div class="flex-1 ml-2">
+                    <a class="font-semibold text-stone-400 text-xl">${outMonyInput} ${'৳ Withdrew.'}</a>
+                    <p class="text-xs">Today 01:44 AM</p>
+                </div>
+                
+                <div class="flex-none">
+                    <button class="btn btn-circle btn-ghost">
+                        <img class="w-4" src="img/ico/vm.png" alt="">
+                    </button>
+                </div>
+            </div>
+    `;
+
+    document.getElementById('payhis').appendChild(div)
+
 })
 
 //--------------------------- Send money from account:-------------------------
@@ -106,6 +156,32 @@ document.getElementById('sendbtn').addEventListener('click', function (event) {
     else {
         alert('Failed to add money. Pid did not matched.')
     }
+
+
+    const div = document.createElement('div');
+    div.innerHTML = `
+            <div class=" flex  mt-4 px-2 py-2 bg-gray-100 rounded-2xl">
+            <div class="flex-none">
+                <button class="btn btn-circle btn-ghost">
+                    <img class="w-12 border border-gray-400 p-2 rounded-[50%]" src="img/ico/paid.png" alt="">
+                </button>
+            </div>
+
+            <div class="flex-1 ml-2">
+                <a class="font-semibold text-stone-400 text-xl">${sendMonyInput} ${'৳ Sent.'}</a>
+                <p class="text-xs">Today 01:44 AM</p>
+            </div>
+            
+            <div class="flex-none">
+                <button class="btn btn-circle btn-ghost">
+                    <img class="w-4" src="img/ico/vm.png" alt="">
+                </button>
+            </div>
+        </div>
+`;
+
+    document.getElementById('payhis').appendChild(div)
+
 })
 
 //--------------------------- Pay bill from account:-------------------------
@@ -141,6 +217,32 @@ document.getElementById('payBtn').addEventListener('click', function (event) {
     else {
         alert('Failed to add money. Pid did not matched.')
     }
+
+
+    const div = document.createElement('div');
+    div.innerHTML = `
+                <div class=" flex  mt-4 px-2 py-2 bg-gray-100 rounded-2xl">
+                <div class="flex-none">
+                    <button class="btn btn-circle btn-ghost">
+                        <img class="w-12 border border-gray-400 p-2 rounded-[50%]" src="img/ico/paid.png" alt="">
+                    </button>
+                </div>
+
+                <div class="flex-1 ml-2">
+                    <a class="font-semibold text-stone-600 text-xl">${moneyToPay} ${'৳ Bill Paid.'}</a>
+                    <p class="text-xs">Today 01:44 AM</p>
+                </div>
+                
+                <div class="flex-none">
+                    <button class="btn btn-circle btn-ghost">
+                        <img class="w-4" src="img/ico/vm.png" alt="">
+                    </button>
+                </div>
+            </div>
+    `;
+
+    document.getElementById('payhis').appendChild(div)
+
 })
 
 //--------------------------- Get Bonus to account:-------------------------
@@ -148,7 +250,7 @@ document.getElementById('payBtn').addEventListener('click', function (event) {
 document.getElementById('BonusAddBtn').addEventListener('click', function (event) {
     event.preventDefault();
     // grt money to Pay,
-    const moneyToGet = GetPFValue('CouponInput')
+    const moneyToGet = GetValue('CouponInput')
 
     //get the pin,
     const pin = GetValue('pin5');
@@ -160,15 +262,19 @@ document.getElementById('BonusAddBtn').addEventListener('click', function (event
         // const cb = document.getElementById('curbal').innerText;
         const currentBall = GetPFText('curbal')
 
-        if (typeof moneyToGet !== 'number' ) {
-            alert('Your Coupon number is not correct.')
-        }
-        else {
+        if (moneyToGet.includes('@')) {
+
             // add total amount:
             const NewBall = currentBall + 100
             console.log(NewBall)
             // Update ball:
             document.getElementById('curbal').innerText = NewBall
+
+
+
+        }
+        else {
+            alert('Your Coupon number is not correct.')
 
         }
 
@@ -176,6 +282,32 @@ document.getElementById('BonusAddBtn').addEventListener('click', function (event
     else {
         alert('Failed to add money. Pid did not matched.')
     }
+
+
+    const div = document.createElement('div');
+    div.innerHTML = `
+                <div class=" flex  mt-4 px-2 py-2 bg-gray-100 rounded-2xl">
+                <div class="flex-none">
+                    <button class="btn btn-circle btn-ghost">
+                        <img class="w-12 border border-gray-400 p-2 rounded-[50%]" src="img/ico/paid.png" alt="">
+                    </button>
+                </div>
+
+                <div class="flex-1 ml-2">
+                    <a class="font-semibold text-stone-400 text-xl">${'100'} ${'৳ From Coupon.'}</a>
+                    <p class="text-xs">Today 01:44 AM</p>
+                </div>
+                
+                <div class="flex-none">
+                    <button class="btn btn-circle btn-ghost">
+                        <img class="w-4" src="img/ico/vm.png" alt="">
+                    </button>
+                </div>
+            </div>
+    `;
+
+    document.getElementById('payhis').appendChild(div)
+
 })
 
 // ----------------------------- recent Payments ------------------------
